@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: statistics-config
+  namespace: apis
+data:
+  DEVICE_REGISTRATION_URL: "http://registration-api.apis.svc.cluster.local:8080"
