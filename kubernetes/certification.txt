@@ -1,0 +1,9 @@
+In order to add the certification to the application run the following commands:
+
+
+kubectl -n bank-apps create secret tls statistics-server-tls \
+  --cert=certs/bank.local.crt \
+  --key=certs/bank.local.key
+
+kubectl -n bank-apps create secret generic statistics-client-ca \
+  --from-file=ca.crt=certs/client-ca.crt
