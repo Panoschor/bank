@@ -45,9 +45,9 @@ Second run the manifest for the creation of the postgress db
 
 For external communication run the following deploy ingress-nginx
 
-    $kubectl apply -f ingress-nginx 
+    $kubectl apply -f infra/ingress-nginx 
 
-For security 
+For security:
 1)Read the following folder Certification in order to create the self-signed crts for applications and certification.txt
 2)Network hardening 
 
